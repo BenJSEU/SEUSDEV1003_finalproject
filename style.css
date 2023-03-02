@@ -4,6 +4,38 @@
     box-sizing: border-box;
 }
 
-.container {
+@media (max-width: 576px) {
+    #headshot {
+        display: flex;
+        width: 200px;
+        height: auto;
+    }
+}
+
+.header {
     background-color: darkgray;
+}
+
+.icons {
+    padding: 15px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: darkgrey;
 }
